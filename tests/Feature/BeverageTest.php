@@ -33,6 +33,7 @@
             $response = $this->get('/beverage/'.$beverage->id);
             $response->assertSee($beverage->name);
             $response->assertStatus(200);
+            
         }
 
     
